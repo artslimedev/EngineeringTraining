@@ -35,3 +35,11 @@ const jiraTitles = ['Create a public repository under your GitHub account',
 
 console.log('jiraTitles', jiraTitles)
 console.log('jiraLinks', jiraLinks)
+
+jiraTitles.map((i) => {
+    console.log(i.toString())
+})
+
+jiraLinks.map((i) => {
+    console.log(i.toString())
+})
