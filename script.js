@@ -35,11 +35,32 @@ const jiraTitles = ['Create a public repository under your GitHub account',
 
 console.log('jiraTitles', jiraTitles)
 console.log('jiraLinks', jiraLinks)
+const jiraObject = {
+    title: [],
+    link: [],
+}
 
-jiraTitles.map((i) => {
-    console.log(i.toString())
-})
+const jiraObjectPrint = () => {
+    jiraLinks.forEach((i) => jiraObject.link.push(i))
+    jiraTitles.forEach((i) => jiraObject.title.push(i))
 
-jiraLinks.map((i) => {
-    console.log(i.toString())
-})
+    console.log('jiraObject', jiraObject)
+}
+
+jiraObjectPrint()
+
+
+const jiraObjectPrint2 = () => {
+    const jiraObject2 = {
+        title: '',
+        link: '',
+    }
+    for (let i = 0; i < 6; i++) {
+        jiraObject2.link = jiraLinks[i];
+        jiraObject2.title= jiraTitles[i];
+
+        console.log('jiraObject2', jiraObject)
+    }
+}
+
+jiraObjectPrint2()
